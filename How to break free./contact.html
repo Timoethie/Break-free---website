@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Break Free - Contact</title>
+  <link href="" rel="stylesheet"/>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+    body {
+      background: #ffffff;
+      color: #0a74da;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      border-bottom: 2px solid #0a74da;
+      background-color: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .logo {
+      font-weight: 700;
+      font-size: 1.8rem;
+      color: #0a74da;
+      cursor: default;
+      letter-spacing: 2px;
+    }
+    .nav-items a {
+      text-decoration: none;
+      margin-left: 40px;
+      font-weight: 600;
+      color: #0a74da;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+    .nav-items a:hover {
+      color: #da0a0a;
+    }
+    .nav-items a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      background: #0a74da;
+      left: 0; bottom: -6px;
+      transition: 0.3s;
+    }
+    .nav-items a:hover::after {
+      width: 100%;
+    }
+
+    .contact-hero {
+      background: #f3f7fd;
+      text-align: center;
+      padding: 60px 30px;
+    }
+    .contact-hero h1 {
+      font-size: 2.5rem;
+      color: #0a74da;
+      margin-bottom: 20px;
+    }
+    .contact-hero p {
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .contact-form-section {
+      padding: 60px 20px;
+      max-width: 600px;
+      margin: auto;
+      background: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .contact-form-section h2 {
+      color: #0a74da;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      font-weight: 600;
+      margin-bottom: 5px;
+      color: #333;
+    }
+    input, textarea {
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+    button {
+      padding: 12px 30px;
+      background-color: #0a74da;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #095ab5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: #f0f0f0;
+      color: #888;
+      font-size: 0.9rem;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Break Free</div>
+    <div class="nav-items">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="solutions.html">Solutions</a>
+      <a href="contact.html" class="active">Contact</a>
+    </div>
+  </nav>
+
+  <header class="contact-hero">
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you! Reach out to us with any questions, ideas, or feedback.</p>
+  </header>
+
+  <section class="contact-form-section">
+    <h2>Send Us a Message</h2>
+    <form action="#" method="post">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your email address" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Break Free Initiative. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+

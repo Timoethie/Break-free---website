@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Break Free - About</title>
+  <link href="" rel="stylesheet"/>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+    body {
+      background: #ffffff;
+      color: #0a74da;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      border-bottom: 2px solid #0a74da;
+      background-color: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .logo {
+      font-weight: 700;
+      font-size: 1.8rem;
+      color: #0a74da;
+      cursor: default;
+      letter-spacing: 2px;
+    }
+    .nav-items a {
+      text-decoration: none;
+      margin-left: 40px;
+      font-weight: 600;
+      color: #0a74da;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+    .nav-items a:hover {
+      color: #da0a0a;
+    }
+    .nav-items a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      background: #0a74da;
+      left: 0;
+      bottom: -6px;
+      transition: 0.3s;
+    }
+    .nav-items a:hover::after {
+      width: 100%;
+    }
+
+    .about-hero {
+      background: #f3f7fd;
+      text-align: center;
+      padding: 60px 30px;
+    }
+    .about-hero h1 {
+      font-size: 2.5rem;
+      color: #0a74da;
+      margin-bottom: 20px;
+    }
+    .about-hero p {
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .content-section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .content-section.light {
+      background-color: #f9f9f9;
+    }
+    .content-section h2 {
+      color: #0a74da;
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+    .content-section p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #333;
+    }
+    .learn-btn {
+      margin-top: 30px;
+      padding: 12px 30px;
+      background-color: #0a74da;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .learn-btn:hover {
+      background-color: #095ab5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: #f0f0f0;
+      color: #888;
+      font-size: 0.9rem;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Break Free</div>
+    <div class="nav-items">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="solutions.html">Solutions</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <header class="about-hero">
+    <h1>Understanding Corporate Control and Escaping Its Grip</h1>
+    <p>How corporations use social media, fast food, and dopamine-driven tactics to keep us hooked—and how to break free.</p>
+  </header>
+
+  <section class="content-section">
+    <h2>📌 The Problem</h2>
+    <p>
+      Every day, powerful corporations shape our lives using advanced psychological tactics—through addictive social media, fast food engineered for instant gratification, and algorithmic manipulation. These strategies create dependence, limit critical thinking, and turn us into perpetual consumers. The result? A society that’s too distracted to question the system.
+    </p> 
+  </section>
+
+  <section class="content-section light">
+    <h2>💡 Our Mission</h2>
+    <p>
+      At Break Free, we believe real freedom starts with understanding the forces that control us. We’re here to help you recognize these manipulations, challenge them, and reclaim your autonomy. Breaking free means being able to think for yourself—and to live with intention, not just consumption.
+    </p>
+  </section>
+
+  <section class="content-section light">
+    <h2>⚖️ Acknowledging the Debate</h2>
+    <p>
+      Some argue that corporations drive innovation and provide essential services. While that’s true, the power dynamic has shifted too far. Profit-driven strategies now prioritize corporate gain over our well-being, creativity, and freedom of choice.
+    </p>
+  </section>
+
+  <section class="content-section">
+    <h2>🎯 What’s Next?</h2>
+    <p>
+      Our goal is to empower you with knowledge and tools to reclaim your power from corporate influence. By breaking free from algorithmic traps, processed food addictions, and digital manipulation, you can shape your own destiny and live more consciously.
+    </p>
+    <button class="learn-btn" onclick="window.location.href='solutions.html'">Explore Solutions</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Break Free Initiative. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+

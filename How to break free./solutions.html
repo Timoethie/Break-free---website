@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Solutions | Break Free</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+<style>
+  /* Reset & base */
+  * {
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+  body {
+
+    background-size: cover;
+    background-repeat: initial;
+    color: #0a74da;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Navigation */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    border-bottom: 2px solid #0a74da;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  .logo {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #0a74da;
+    letter-spacing: 2px;
+    cursor: default;
+  }
+  .nav-items a {
+    text-decoration: none;
+    margin-left: 40px;
+    font-weight: 600;
+    color: #0a74da;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  .nav-items a:hover {
+    color: #da0a0a;
+  }
+  .nav-items a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #0a74da;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+  }
+  .nav-items a:hover::after {
+    width: 100%;
+  }
+
+  /* Hero */
+  .solutions-hero {
+    background: rgba(243, 247, 253, 0.9);
+    text-align: center;
+    padding: 60px 30px;
+    backdrop-filter: blur(4px);
+  }
+  .solutions-hero h1 {
+    font-size: 2.5rem;
+    color: #0a74da;
+    margin-bottom: 20px;
+  }
+  .solutions-hero p {
+    font-size: 1.2rem;
+    color: #333;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  /* Content Sections */
+  .content-section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    margin-bottom: 40px;
+  }
+  .content-section h2 {
+    color: #0a74da;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .content-section p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #333;
+  }
+
+  .solution-list {
+    margin-top: 20px;
+    padding-left: 20px;
+  }
+  .solution-list li {
+    font-size: 1.05rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .learn-btn {
+    margin-top: 30px;
+    padding: 12px 30px;
+    background-color: #0a74da;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .learn-btn:hover {
+    background-color: #095ab5;
+  }
+
+  footer {
+    padding: 20px 0;
+    text-align: center;
+    background: #f7f9fc;
+    font-size: 0.9rem;
+    color: #777;
+    border-top: 1px solid #ddd;
+  }
+
+  @media (max-width: 900px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .nav-items {
+      margin-top: 10px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Break Free</div>
+  <div class="nav-items">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="solutions.html">Solutions</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<section class="solutions-hero">
+  <h1>Break Free from Corporate Control</h1>
+  <p>Learn how to reclaim your time, attention, and health by understanding how big corporations use social media and fast food to keep you hooked—and how you can break free from their influence.</p>
+</section>
+<div>
+
+</div>
+<div></div>
+<section class="content-section">
+  <h2>Understanding the Problem</h2>
+  <p>
+    Big corporations design social media algorithms to keep you endlessly scrolling, and craft fast food menus to hijack your taste buds—generating profit at the expense of your well-being.
+    These systems exploit dopamine and addiction, making you dependent on their products while draining your time, energy, and health.
+  </p>
+  <div></div>
+  <div></div>
+  <ul class="solution-list">
+    <li>Algorithms prioritize content that triggers strong emotions, keeping you engaged (and distracted).</li>
+    <li>Fast food giants engineer meals to maximize flavor and cravings, encouraging overconsumption.</li>
+    <li>Constant notifications and targeted ads feed the cycle of consumption and dependence.</li>
+  </ul>
+</section>
+
+<section class="content-section light">
+  <h2>How to Break Free</h2>
+  <p>
+    Breaking free starts with awareness—recognizing how these systems operate and taking steps to protect yourself from their influence.
+    Here’s how you can start reclaiming your life:
+  </p>
+  <ul class="solution-list">
+    <li>Set boundaries on your screen time; use apps that block distractions.</li>
+    <li>Practice mindful eating and choose whole, unprocessed foods over fast food.</li>
+    <li>Educate yourself about corporate marketing tactics and share that knowledge with others.</li>
+    <li>Connect with like-minded people who support your journey to independence.</li>
+  </ul>
+  <button class="learn-btn" onclick="window.location.href='contact.html'">Contact Us</button>
+</section>
+
+<footer>
+  &copy; 2025 Break Free. All rights reserved.
+</footer>
+
+</body>
+</html>
+

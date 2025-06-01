@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Break Free - Home</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+<style>
+  /* Reset & base */
+  * {
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+  body {
+    background-image: url(icegif-983.gif);
+    background-size: cover;
+    background-repeat: initial;
+    color: #0a74da; /* dark text */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Navigation */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    border-bottom: 2px solid #0a74da; /* blue underline */
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  .logo {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: z#0a74da; /* bright blue */
+    cursor: default;
+    letter-spacing: 2px;
+  }
+  .nav-items a {
+    text-decoration: none;
+    margin-left: 40px;
+    font-weight: 600;
+    color: #0a74da;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  .nav-items a:hover {
+    color: #da0a0a;
+  }
+  .nav-items a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #0a74da;
+    left: 0; bottom: -6px;
+    transition: 0.3s;
+  }
+  .nav-items a:hover::after {
+    width: 100%;
+  }
+
+  /* Hero Section */
+  .hero {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 80px;
+  }
+  .hero-container {
+    display: flex;
+    max-width: 1200px;
+    gap: 60px;
+  }
+  .column-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .column-left h1 {
+    font-size: 3.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    letter-spacing: 1.2px;
+  }
+  .column-left p {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    color: #ffffff;
+  }
+  .learn-btn {
+    background: #0a74da;
+    color: white;
+    padding: 16px 38px;
+    font-weight: 700;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(10, 116, 218, 0.4);
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+    width: fit-content;
+  }
+  .learn-btn:hover {
+    background: #005bb5;
+    box-shadow: 0 8px 25px rgba(0, 91, 181, 0.6);
+  }
+
+  /* Hero Image */
+  .column-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-image {
+    max-width: 100%;
+    border-radius: 12px;
+    filter: drop-shadow(0 4px 10px rgba(10, 116, 218, 0.25));
+    transition: transform 0.5s ease;
+  }
+  .hero-image:hover {
+    transform: scale(1.05) rotate(1deg);
+  }
+
+  /* Footer */
+  footer {
+    padding: 20px 0;
+    text-align: center;
+    background: #f7f9fc;
+    font-size: 0.9rem;
+    color: #777;
+    border-top: 1px solid #ddd;
+  }
+
+  /* Responsive */
+  @media (max-width: 900px) {
+    .hero-container {
+      flex-direction: column;
+      padding: 0 30px;
+    }
+    .column-left, .column-right {
+      text-align: center;
+    }
+    .column-left h1 {
+      font-size: 2.5rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Break Free</div>
+  <div class="nav-items">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="solutions.html">Solutions</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-container">
+    <div class="column-left">
+      <h1>Break Free From Corporate Control</h1>
+      <p>Discover how to reclaim your freedom and live on your own terms. Knowledge is the key to change.</p>
+      <button class="learn-btn" onclick="window.location.href='about.html'">Learn More</button>
+    </div>
+    <div class="column-right">
+      <img src="Break Free.png" alt="Break Free Logo" class="hero-image" />
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Break Free Initiative. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
